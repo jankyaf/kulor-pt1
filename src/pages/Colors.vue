@@ -3,11 +3,20 @@
   <v-container>
     <v-row>
       <v-col cols="12">
+        <!-- Custom Expansion Panel (Prototype) -->
         <CustomExpansionPanel v-model:isExpanded="isExpanded" />
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="12">
+        <v-expansion-panels>
+          <ThemePickerPanel />
+        </v-expansion-panels>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <!-- Accent Colors Expansion Panel (Prototype) -->
         <v-expansion-panels>
           <AccentColorsExpansionPanel_v2 :themeToDisplay="theme.current" />
         </v-expansion-panels>
