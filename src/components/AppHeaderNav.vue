@@ -9,17 +9,41 @@
     <v-spacer />
     <ProfilePopoverMenu_LoggedOut />
   </v-app-bar>
-  <v-navigation-drawer v-model="navSidebar" app expand-on-hover permanent rail>
+  <v-navigation-drawer
+    v-model="navSidebar"
+    app
+    expand-on-hover
+    permanent
+    rail
+  >
     <v-list nav>
-      <v-list-item v-for="(item, i) in navSidebarItemsTop" :key="i" color="primary" :prepend-icon="item.icon" :to="item.route">
+      <v-list-item
+        v-for="(item, i) in navSidebarItemsTop"
+        :key="i"
+        color="primary"
+        :prepend-icon="item.icon"
+        :to="item.route"
+      >
         <v-list-item-title>{{ item.title }}</v-list-item-title>
       </v-list-item>
-      <v-divider class="my-4" thickness="4"></v-divider>
-      <v-list-item v-for="(item, i) in navSidebarItemsBottom" :key="i" color="primary" :prepend-icon="item.icon" :to="item.route">
+      <v-divider class="my-4" thickness="4" />
+      <v-list-item
+        v-for="(item, i) in navSidebarItemsBottom"
+        :key="i"
+        color="primary"
+        :prepend-icon="item.icon"
+        :to="item.route"
+      >
         <v-list-item-title>{{ item.title }}</v-list-item-title>
       </v-list-item>
-      <v-divider class="my-4" thickness="4"></v-divider>
-      <v-list-item v-for="(item, i) in navSidebarItemsGroup1" :key="i" color="primary" :prepend-icon="item.icon" :to="item.route">
+      <v-divider class="my-4" thickness="4" />
+      <v-list-item
+        v-for="(item, i) in navSidebarItemsGroup1"
+        :key="i"
+        color="primary"
+        :prepend-icon="item.icon"
+        :to="item.route"
+      >
         <v-list-item-title>{{ item.title }}</v-list-item-title>
       </v-list-item>
     </v-list>
@@ -34,8 +58,8 @@
   const navSidebarItemsTop = [
     { title: 'Home', icon: 'mdi-home-outline', route: '/home' },
     { title: 'Favorites', icon: 'mdi-star-outline', route: '/favorites' },
-    { title: 'Counter', icon: 'mdi-counter', route: '/counter'},
-    { title: 'Colors', icon: 'mdi-palette-outline', route: '/colors'},
+    { title: 'Counter', icon: 'mdi-counter', route: '/counter' },
+    { title: 'Colors', icon: 'mdi-palette-outline', route: '/colors' },
   ]
 
   const navSidebarItemsBottom = [

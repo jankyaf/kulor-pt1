@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12" class="text-center my-8">
+      <v-col class="text-center my-8" cols="12">
         <div>
           <h1>{{ title }}</h1>
           <p>{{ description }}</p>
@@ -12,8 +12,8 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  title: String,
-  description: String,
-})
+  const props = defineProps({
+    title: String,
+    description: String,
+  })
 </script>

@@ -6,16 +6,16 @@
     <v-expansion-panel-text>
       <v-row class="py-4">
         <v-col style="min-width: 280px; max-width: 400px">
-          <ButtonVariantDisplayCard title="BUTTON REGULAR" :colors="getAccentColors(theme)" variant="elevated" />
+          <ButtonVariantDisplayCard :colors="getAccentColors(theme)" title="BUTTON REGULAR" variant="elevated" />
         </v-col>
         <v-col style="min-width: 280px; max-width: 400px">
-          <ButtonVariantDisplayCard title="BUTTON TONAL" :colors="getAccentColors(theme)" variant="tonal" />
+          <ButtonVariantDisplayCard :colors="getAccentColors(theme)" title="BUTTON TONAL" variant="tonal" />
         </v-col>
         <v-col style="min-width: 280px; max-width: 400px">
-          <ButtonVariantDisplayCard title="BUTTON OUTLINE" :colors="getAccentColors(theme)" variant="outlined" />
+          <ButtonVariantDisplayCard :colors="getAccentColors(theme)" title="BUTTON OUTLINE" variant="outlined" />
         </v-col>
         <v-col style="max-width: 300px">
-          <ColorCodeDisplayCard title="COLOR CODES" :colors="getAccentColors(theme)" />
+          <ColorCodeDisplayCard :colors="getAccentColors(theme)" title="COLOR CODES" />
         </v-col>
       </v-row>
     </v-expansion-panel-text>
@@ -23,14 +23,14 @@
 </template>
 
 <script setup>
-import ButtonVariantDisplayCard from './ButtonVariantDisplayCard.vue';
-import ColorCodeDisplayCard from './ColorCodeDisplayCard.vue';
-import { getAccentColors } from '../utils/themeUtils';
+  import { getAccentColors } from '../utils/themeUtils'
+  import ButtonVariantDisplayCard from './ButtonVariantDisplayCard.vue'
+  import ColorCodeDisplayCard from './ColorCodeDisplayCard.vue'
 
-const props = defineProps({
-  theme: {
-    type: Object,
-    required: true,
-  },
-});
+  const props = defineProps({
+    theme: {
+      type: Object,
+      required: true,
+    },
+  })
 </script>

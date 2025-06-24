@@ -1,14 +1,14 @@
 <template>
-  <v-card color="background" variant="flat" class="border-lg">
+  <v-card class="border-lg" color="background" variant="flat">
     <v-card-title class="text-center">{{title}}</v-card-title>
-    <v-divider thickness="4" color="surface-variant"></v-divider>
+    <v-divider color="surface-variant" thickness="4" />
     <v-list bg-color="background">
-      <v-list-item class="ma-4" v-for="(color, name) in colors" :key="name">
+      <v-list-item v-for="(color, name) in colors" :key="name" class="ma-4">
         <template v-slot:prepend>
           <div class="d-flex align-center">
             <div
-              :style="{ width: '36px', height: '36px', backgroundColor: color, marginRight: '8px', borderRadius: '4px' }">
-            </div>
+              :style="{ width: '36px', height: '36px', backgroundColor: color, marginRight: '8px', borderRadius: '4px' }"
+            />
           </div>
         </template>
         <v-list-item-title>{{ name }}</v-list-item-title>
@@ -20,14 +20,14 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'COLOR CODES',
-  },
-  colors: {
-    type: Object,
-    required: true,
-  },
-});
+  const props = defineProps({
+    title: {
+      type: String,
+      default: 'COLOR CODES',
+    },
+    colors: {
+      type: Object,
+      required: true,
+    },
+  })
 </script>
