@@ -9,6 +9,7 @@ export default vuetify({
       // "multiline": {
       //   "max": 0
       // },
+      'vue/script-setup-uses-vars': 'error',
     }]
   }
 })
