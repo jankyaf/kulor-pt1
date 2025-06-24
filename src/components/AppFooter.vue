@@ -1,5 +1,12 @@
+<!-- 
+  AppFooter.vue
+  A Vue component that provides a footer with social/media links and copyright/license info.
+  Uses Vuetify's v-footer and v-icon components for layout and icons.
+-->
 <template>
+  <!-- Application footer with fixed height -->
   <v-footer app height="40">
+    <!-- Social/media links rendered as icons -->
     <a
       v-for="item in items"
       :key="item.title"
@@ -9,12 +16,14 @@
       target="_blank"
       :title="item.title"
     >
+      <!-- Icon for each social/media link -->
       <v-icon
         :icon="item.icon"
         :size="item.icon === '$vuetify' ? 24 : 16"
       />
     </a>
 
+    <!-- Copyright and license info, aligned to the right -->
     <div
       class="text-caption text-disabled"
       style="position: absolute; right: 16px;"
@@ -34,6 +43,7 @@
 </template>
 
 <script setup>
+  // List of social/media items to display in the footer
   const items = [
     {
       title: 'Vuetify Documentation',
@@ -69,6 +79,7 @@
 </script>
 
 <style scoped lang="sass">
+  // Style for social link icons in the footer
   .social-link :deep(.v-icon)
     color: rgba(var(--v-theme-on-background), var(--v-disabled-opacity))
     text-decoration: none
