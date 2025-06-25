@@ -92,3 +92,14 @@ export function getExtendedBaseColors(theme) {
   };
   return extendedBaseColors;
 };
+
+export function getAllColors(theme) {
+  const themeColors = theme.value.colors
+  const allColors: Record<string, any> = {}
+  for (const color in themeColors) {
+    const colorName = color
+    const colorValue = themeColors[color]
+    allColors[colorName] = colorValue
+  }
+  return allColors
+}

@@ -13,32 +13,15 @@
       <v-spacer />
     </v-expansion-panel-title>
     <!-- Panel content area -->
-    <v-expansion-panel-text>
+    
+    <v-expansion-panel-text no-gutters>
       <!-- Row container with vertical padding -->
-      <v-row class="py-4">
-        <!-- Column with maximum width constraint for better UX -->
-        <v-col cols="12" style="max-width: 400px">
-          <!-- Combobox for theme selection with custom item mapping -->
-          <!-- Display property for dropdown items -->
-          <!-- Value property for dropdown items -->
-          <!-- Array of available themes -->
-          <!-- Input label -->
-          <!-- Vuetify input variant -->
-          <!-- Input density setting -->
-          <!-- Hide validation details -->
-          <!-- Event handler for theme changes -->
-          <v-combobox
-            item-title="name"
-            item-value="id"
-            :items="themesList"
-            label="Select Theme"
-            variant="solo-filled"
-            density="comfortable"
-            hide-details
-            @update:model-value="handleThemeChange"
-          />
-        </v-col>
-      </v-row>
+      <v-list>
+        <v-list-item v-for="theme in themesList" :key="theme.id">
+          <v-list-item-title>{{ theme.name }}</v-list-item-title>
+
+        </v-list-item>
+      </v-list>
     </v-expansion-panel-text>
   </v-expansion-panel>
 </template>

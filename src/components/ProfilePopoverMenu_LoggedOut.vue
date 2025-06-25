@@ -23,21 +23,23 @@
           <!-- List item with login/register form fields and buttons -->
           <v-list-item>
             <!-- Email input field -->
-            <v-text-field v-model="email" label="Email" />
+            <v-text-field v-model="email" label="Email" variant="outlined" density="compact" />
             <!-- Password input field -->
-            <v-text-field v-model="password" label="Password" />
+            <v-text-field v-model="password" label="Password" variant="outlined" density="compact" />
             <!-- Login button -->
             <v-btn
-              class="mt-2"
               color="primary"
+              variant="outlined"
+              
               prepend-icon="mdi-login"
               width="100%"
               @click="login"
             >LOGIN</v-btn>
             <!-- Register button -->
             <v-btn
-              class="mt-2"
-              color="secondary"
+              class="mt-4"
+              color="primary"
+              variant="elevated"
               prepend-icon="mdi-account-plus"
               width="100%"
               @click="register"

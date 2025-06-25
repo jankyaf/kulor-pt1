@@ -22,6 +22,8 @@ declare module 'vue' {
     ProfilePopoverMenu_LoggedOut: typeof import('./components/ProfilePopoverMenu_LoggedOut.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Test: typeof import('./components/test.vue')['default']
+    ThemePickerComboBox: typeof import('./components/ThemePickerComboBox.vue')['default']
     ThemePickerPanel: typeof import('./components/ThemePickerPanel.vue')['default']
   }
 }

@@ -6,7 +6,7 @@
 -->
 <template>
   <!-- Expansion panel container with background color and border styling -->
-  <v-expansion-panel bg-color="background" class="border">
+  <v-expansion-panel bg-color="background" class="border" >
     <!-- Panel title section with fixed height and surface color -->
     <v-expansion-panel-title color="surface" height="64px">
       <h2>ACCENT COLORS</h2>
