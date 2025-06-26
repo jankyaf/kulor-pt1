@@ -28,8 +28,7 @@ const themesList = Object.keys(theme.themes.value).map((themeName) => ({
     themeName
       .slice(1)  // Get remaining characters
       .replace(/([A-Z])/g, " $1")  // Add space before capital letters (camelCase to Title Case)
-      .trim() +  // Remove leading/trailing spaces
-    " Theme",  // Append "Theme" suffix
+      .trim()  // Remove leading/trailing spaces
 }));
 
 // Event handler for when user selects a new theme

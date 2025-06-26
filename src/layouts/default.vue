@@ -2,7 +2,9 @@
   <v-app>
     <AppHeaderNav />
     <v-main>
-      <router-view />
+      <v-container class="mx-auto" max-width="1200px">
+        <router-view />
+      </v-container>
     </v-main>
     <AppFooter />
   </v-app>

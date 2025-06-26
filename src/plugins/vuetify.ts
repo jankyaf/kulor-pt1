@@ -18,25 +18,11 @@ import '@mdi/font/css/materialdesignicons.css'
 /* DEFAULT THEMES                                                             */
 /* ========================================================================== */
 
-// const defaultcolors = {
-//   primary: '#1976D2',
-//   secondary: '#424242',
-//   accent: '#82B1FF',
-//   error: '#FF5252',
-//   info: '#2196F3',
-//   success: '#4CAF50',
-//   warning: '#FFC107',
-// }
-
-// const darkthemecolors = {
-//   primary: '#1976D2',
-//   secondary: '#424242',
-//   accent: '#82B1FF',
-//   error: '#FF5252',
-//   info: '#2196F3',
-//   success: '#4CAF50',
-//   warning: '#FFC107',
-// }
+// Vuetify's default border colors
+const defaultBorderColors = {
+  dark: '#2f2f2f', // Vuetify's default dark theme border color
+  light: '#e0e0e0', // Vuetify's default light theme border color
+}
 
 /* ========================================================================== */
 /* CUSTOM THEMES                                                              */
@@ -59,14 +45,15 @@ const testTheme: ThemeDefinition = {
 const altDarkTheme: ThemeDefinition = {
   dark: true,
   colors: {
-    background: '#121212',
-    surface: '#1E1E1E',
-    primary: '#1976D2',
-    secondary: '#424242',
-    success: '#4CAF50',
-    warning: '#FFC107',
-    error: '#FF5252',
-    info: '#2196F3',
+    'background': '#121212',
+    'surface': '#1E1E1E',
+    'primary': '#1976D2',
+    'secondary': '#424242',
+    'success': '#4CAF50',
+    'warning': '#FFC107',
+    'error': '#FF5252',
+    'info': '#2196F3',
+    'border-color': '#D8114D',
     // ----------unused colors----------
     // 'primary-darken-1': '#1565C0',
     // 'secondary-darken-1': '#373737',
@@ -82,12 +69,13 @@ const altDarkTheme: ThemeDefinition = {
 const altLightTheme: ThemeDefinition = {
   dark: false,
   colors: {
-    primary: '#009688',
-    secondary: '#795548',
-    success: '#8BC34A',
-    warning: '#FFEB3B',
-    error: '#F44336',
-    info: '#03A9F4',
+    'primary': '#009688',
+    'secondary': '#795548',
+    'success': '#8BC34A',
+    'warning': '#FFEB3B',
+    'error': '#F44336',
+    'info': '#03A9F4',
+    'border-color': '#D8114D',
   },
 }
 
